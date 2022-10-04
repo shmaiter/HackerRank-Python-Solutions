@@ -1,5 +1,5 @@
 def average(array):
-    return sum(set(array))/len(set(array))
+    return round(sum(set(array))/len(set(array)), 3)
 
 
 if __name__ == '__main__':
