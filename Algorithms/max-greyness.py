@@ -19,12 +19,7 @@ the result will always be equal to the numerator.
 # [print(f'Position for {i}: is column {i % 3}') for i in range(12)]
 
 
-# pixels = [[1, 0, 1],
-#           [0, 0, 1],
-#           [1, 1, 0]]
-pixels = [[1, 1, 1],
-          [0, 1, 1],
-          [1, 1, 0]]
+pixels = [[1, 0, 1], [0, 0, 1], [1, 1, 0]]
 
 
 def max_greyness():
@@ -49,12 +44,6 @@ def max_greyness():
             for index, value in enumerate(row):
                 if index == cell_col_index:
                     col_area.append(value)
-
-        ''' Comprehension List Short Version '''
-        # row_area = [value for index, value in enumerate(
-        #     pixels) if index == cell_row_index]
-        # col_area = [
-        #     value for row in pixels for index, value in enumerate(row) if index == cell_col_index]
 
         # Step 3: Sum up the 1's and 0's and apply the formula for levels of grayness
         # g = (1's + 1's) - (0's + 0's)
